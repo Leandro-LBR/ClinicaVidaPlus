@@ -1,0 +1,111 @@
+Clínica Vida Plus API
+
+# Api para gerenciamento de pacientes de uma clinica médica, desenvolvida em .NET, utilizando Entity Framework Core e SQLite.
+
+Sobre o projeto.
+
+# A Clínica Vida Plus API é uma aplicação backend criada para gerenciar pacientes de forma simples e eficiente.
+Este projeto faz parte do meu aprendizado em Desenvolvimento Bakcend com .NET.
+
+# Funcionalidades
+
+* Cadastrar pacientes
+* Listar pacientes
+* Buscar pacientes por nome
+* Remover pacientes
+* Atualizar pacientes (em breve)
+* Cadastro de médicos (em breve)
+* Agendamento de Consultas (em breve)
+
+# Tecnologias Utilizadas
+
+* .NET
+* C#
+* Entity Framework Core
+* SQLite
+* Swagger
+* Git & GitHub
+
+# Estrutura do Projeto
+ClinicaVidaPlus 
+├── Controllers 
+├── Models 
+├── Data
+├── Migrations 
+├── Program.cs 
+├── appsettings.json 
+└── README.md
+
+# COMO EXECUTAR O PROJETO
+
+* Clonar o repositório
+git clone https:/github.com/Leandro-LBR/ClinicaVidaPlus.git
+
+* Acessar a pasta do Projeto
+cd ClinicaVidaPlus
+
+* Restaurar dependências
+dotnet restore
+
+* Criar banco de dados
+dotnet ef database update
+
+* Executar o Projeto
+dotnet run
+
+# Documentação da API
+
+Após executar o projeto, acesse:
+
+http://localhost:5080/swagger
+
+O Swagger permite testar todos os endpoints da API.
+
+# Endpoints
+* Listar Pacientes
+GET /api/pacientes
+* Cadastrar Paciente
+POST /api/pacientes
+
+# Exemplo:
+
+{
+  "nome": "Leandro",
+  "idade": 27,
+  "telefone": "11999999999"
+}
+* Buscar Paciente
+GET /api/pacientes/buscar?nome=Leandro
+* Remover Paciente
+DELETE /api/pacientes/{id}
+* Objetivo do Projeto
+
+# Este projeto tem como objetivo:
+
+* Praticar desenvolvimento backend
+Aprender .NET Web API
+Trabalhar com banco de dados SQLite
+Criar projeto para portfólio
+
+# *Autor*
+
+Leandro Benedito.
+
+GitHub: https://github.com/Leandro-LBR
+
+Status do Projeto
+
+Em desenvolvimento
+
+# Contribuições
+
+Contribuições são bem-vindas!
+
+Sinta-se à vontade para abrir:
+
+Issues
+Pull Requests
+Sugestões
+Licença
+
+Este projeto está sob a licença MIT.
